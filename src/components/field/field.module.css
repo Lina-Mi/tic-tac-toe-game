@@ -1,0 +1,74 @@
+.field {
+	background: #bfb2ef;
+
+	width: 460px;
+	height: 460px;
+	margin: 20px;
+
+	padding: 16px;
+	border-radius: 30px;
+	text-align: center;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+
+	position: relative;
+}
+
+.cell {
+	background: transparent;
+	border: none;
+
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.cell svg {
+	max-width: 100px;
+	max-height: 100px;
+	align-items: center;
+	display: block;
+	margin: auto;
+}
+
+.line {
+	position: absolute;
+	background: #8824c2;
+	border-radius: 10px;
+	align-items: center;
+}
+
+.vertical1,
+.vertical2 {
+	width: 15px;
+	height: calc(100% - 32px);
+	top: 16px;
+}
+
+.vertical1 {
+	left: calc(33.333% - 7.5px);
+}
+
+.vertical2 {
+	left: calc(66.666% - 7.5px);
+}
+
+.horizontal1,
+.horizontal2 {
+	height: 15px;
+	width: calc(100% - 32px);
+	left: 16px;
+}
+
+.horizontal1 {
+	top: calc(33.333% - 7.5px);
+}
+
+.horizontal2 {
+	top: calc(66.666% - 7.5px);
+}

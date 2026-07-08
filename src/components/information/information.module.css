@@ -1,0 +1,26 @@
+.informationContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.information {
+	background: #6345d4;
+	padding: 15px 30px;
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Comic Relief', system-ui;
+	white-space: nowrap;
+	width: 320px;
+}
+
+.win,
+.draw {
+	background: #fe1984;
+	width: 320px;
+}
