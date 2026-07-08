@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 import styles from './field.module.css';
-import { IMAGE } from '../../constants';
+import { PLAYER, IMAGE } from '../../constants';
 
 export const FieldLayout = ({ field, handleCellClick }) => (
 	<div className={styles.field}>
@@ -23,3 +24,8 @@ export const FieldLayout = ({ field, handleCellClick }) => (
 		})}
 	</div>
 );
+
+FieldLayout.propTypes = {
+	field: PropTypes.arrayOf(PropTypes.oneOf([PLAYER.CROSS, PLAYER.ZERO, PLAYER.NOBODY])),
+	handleCellClick: PropTypes.func,
+};
