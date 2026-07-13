@@ -9,6 +9,7 @@ export const Game = () => {
 	const [field, setField] = useState(new Array(9).fill(PLAYER.NOBODY));
 
 	const state = { status, setStatus, currentPlayer, setCurrentPlayer, field, setField };
+	
 	const handleResetGame = () => {
 		resetGame(setStatus, setCurrentPlayer, setField);
 	};
